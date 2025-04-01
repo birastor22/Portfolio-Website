@@ -25,15 +25,15 @@
               <img src="assets/images/profile_pic.jpeg" class="prof_img rounded-full w-[200px] h-[200px] border-4 border-white" alt="Profile Picture">
               <div class="prof_desc mt-10 xl:ml-5 ml-0">
                     <h1 class="name text-5xl font-bold">Ben Irastorza</h1>
-                    <h2 class="title text-xl font-medium text-gray-300">Software Developer</h2>
+                    <h2 class="title text-xl font-medium text-gray-300">Aspiring Software Engineer</h2>
                 </div>
             </div>
-            <h2 class="text-2xl font-semibold mb-4">Junior CS Student at Georgia Tech</h2>
-            <div class="links flex gap-x-6 mt-5">
+            <h2 class="text-2xl font-semibold mb-4">3rd-year CS Student at Georgia Tech</h2>
+            <div class="links flex gap-x-6 mt-5 mb-10">
                 <a href="mailto:bmirastorza@gmail.com" target="_blank">
                     <i class="fa-regular fa-envelope hover:text-orange-200 text-3xl"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/bira89483/" target="_blank">
+                <a href="https://www.linkedin.com/in/ben-irastorza/" target="_blank">
                     <i class="fa-brands fa-linkedin hover:text-orange-200 text-3xl"></i>
                 </a>
                 <a href="https://github.com/birastor22" target="_blank">
@@ -41,28 +41,64 @@
                 </a>
                 <a href="assets/data/Irastorza_Resume.pdf" target="_blank" id="resume" class="hover:text-orange-200 text-2xl">Resume</a>
             </div>
+
+            <!-- Navigation Section -->
+            <div class="navigation mt-12">
+                <ul class="flex flex-col gap-4">
+                    <li>
+                        <a href="#about" class="flex items-center gap-4 text-gray-300 hover:text-orange-200 transition-colors text-xl">
+                            <i class="fa-solid fa-user"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#technologies" class="flex items-center gap-2 text-gray-300 hover:text-orange-200 transition-colors text-xl">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Technologies</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#experience" class="flex items-center gap-3.5 text-gray-300 hover:text-orange-200 transition-colors text-xl">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <span>Experience</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="flex items-center gap-2.5 text-gray-300 hover:text-orange-200 transition-colors text-xl">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <!-- Right Section -->
         <div class="right md:ml-[50%] ml-5 md:mr-0 mr-5">
             <!-- About Section -->
-            <div class="about mb-20 mt-10 md:mt-0">
+            <div id="about" class="about mb-20 mt-10 md:mt-0">
                 <h2 class="text-3xl font-bold mb-4">About Me</h2>
                 <p class="text-gray-300 leading-7 mb-4">
-                  When I was a freshman in high school, I created <a href="https://spx22247.neocities.org/" target="_blank" class="hover:text-orange-200 text-white font-semibold">my first website</a>
-                  kickstarting my development journey. Now I have made various personal projects as well as contributed 
-                  to <a href="https://parkeravery.com/ask-the-hypercube-democratizing-predictive-analytics-with-generative-ai/#bridging-the-gap" target="_blank" class="hover:text-orange-200 text-white font-semibold">cutting edge Generative AI projects</a> 
+                  As a freshman in high school, I created <a href="https://spx22247.neocities.org/" target="_blank" class="hover:text-orange-200 text-white font-semibold">my first website</a>, 
+                  which marked the beginning of my development journey. Since then, I have worked on various personal projects and contributed 
+                  to <a href="https://parkeravery.com/ask-the-hypercube-democratizing-predictive-analytics-with-generative-ai/#bridging-the-gap" target="_blank" class="hover:text-orange-200 text-white font-semibold">cutting-edge Generative AI initiatives</a> 
                   for companies like The Parker Avery Group.
                 </p>
                 <p class="text-gray-300 leading-7 mb-4">
-                    I specialize in software development for AI agents while continuously learning and working with various databases. My goal is to deepen my understanding and enhance the practical applications of artificial intelligence.
+                    I am passionate about software development for <b>AI agents</b> and continuously learning how to containerize and deploy these applications. 
+                    I'm also interested in <b>advanced analytics and statistics</b>. By combining these areas, I aim to build more effective and insightful AI solutions that can make a meaningful impact.
+                </p>
+                <p class="text-gray-300 leading-7 mb-4">
+                    Outside of academics, I am actively involved in campus life. As a member of the IFC Social Committee, I help create a safe and enjoyable experience for students. 
+                    As a Founding Father of Lambda Chi Alpha Fraternity, I contribute to building a brotherhood focused on leadership, community, and personal growth. 
+                    My involvement in the Catholic Center has also been a meaningful part of my college experience, offering opportunities for spiritual growth and service.
                 </p>
                 <p class="text-gray-300 leading-7">
-                  When I'm not glued to my screen, I enjoy lifting, various sports, <a href="https://open.spotify.com/user/21z5goj4nrdhjsxr7scvfszdy?si=bef3b98cd98949dc" target="_blank" class="hover:text-orange-200 text-white font-semibold">music</a>, and spending time with friends and family.
+                    When I step away from my computer, I enjoy lifting, various sports, <a href="https://open.spotify.com/user/21z5goj4nrdhjsxr7scvfszdy?si=bef3b98cd98949dc" target="_blank" class="hover:text-orange-200 text-white font-semibold">music</a>, and spending time with friends and family.
                 </p>
             </div>
             <!-- Technologies Section -->
-            <div class="technologies mb-20">
+            <div id="technologies" class="technologies mb-20">
                 <h2 class="text-3xl font-bold mb-6">My Technologies</h2>
                 <div class="languages mb-10">
                     <h4 class="text-xl font-medium mb-6">Languages</h4>
@@ -92,7 +128,7 @@
                 </div>
             </div>
             <!-- Experience Section -->
-            <div class="experience max-w-3xl space-y-8 mb-20">
+            <div id="experience" class="experience max-w-3xl space-y-8 mb-20">
                 <h2 class="text-3xl font-bold text-white mb-6">Experience</h2>
               
                 <!-- First Experience Item -->
@@ -132,7 +168,7 @@
                     <!-- Content -->
                     <div class="space-y-2">
                         <h3 class="text-xl font-semibold text-white">
-                            Software Engineer Intern - The Parker Avery Group
+                            Data Science Intern - The Parker Avery Group
                         </h3>
                         <h4 class="text-blue-300 font-medium">May 2024 - August 2024</h4>
                   
@@ -155,7 +191,7 @@
                 </div>
             </div>
             <!-- Projects Section -->
-            <div class="projects">
+            <div id="projects" class="projects">
                 <h2 class="text-3xl font-bold text-white mb-10">Projects</h2>
                 <div class="flex flex-wrap gap-y-16">
                       <!-- Project 1 -->
@@ -185,5 +221,9 @@
             </div>
         </div>
     </div>
+
+    <!-- Link to index.js -->
+    <script src="index.js"></script>
+
 </body>
 </html>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ben Irastorza | Portfolio Website</title>
     <meta name="description" content="Ben Irastorza Portfolio Website.">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <meta name="keywords" content="Ben Irastorza, Ben Irastorza Portfolio, Web Developer Ben Irastorza, Ben Irastorza Website, Portfolio Website, Web Development">
     <meta name="author" content="Ben Irastorza">
     <meta property="og:title" content="Ben Irastorza Portfolio Website.">
@@ -39,6 +40,9 @@
 </head>
 
 <body class="bg-[#141e30] bg-gradient-to-r from-[#141e30] to-[#243b55] font-roboto text-white">
+    <!-- Particles.js container -->
+    <div id="particles-js" class="fixed top-0 left-0 w-full h-full -z-10"></div>
+    
     <!-- Skip to main content for accessibility -->
     <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-blue-300 focus:text-black">Skip to main content</a>
 
@@ -77,7 +81,7 @@
 
             <!-- Navigation Section -->
             <nav class="navigation mt-12" aria-label="Main navigation">
-                <ul class="flex flex-col gap-4 text-xl">
+                <ul class="inline-flex flex-col gap-4 text-xl">
                     <li>
                         <a href="#about" class="flex items-center gap-5 text-gray-300 hover:text-orange-200 hover-lift">
                             <i class="fa-solid fa-user"></i>
@@ -145,12 +149,12 @@
             <!-- Technical Skills Section -->
             <section id="technologies" class="mb-20">
                 <h2 class="text-3xl font-bold mb-4">Tech Skills</h2>
-                <div class="technologies flex flex-wrap justify-center gap-12">
+                <div class="technologies flex flex-wrap gap-12">
 
                     <!-- Languages -->
-                    <article class="languages bg-gray-800 rounded-lg shadow-lg p-6">
+                    <article class="languages bg-gray-800 rounded-lg shadow-lg p-4">
                         <h3 class="text-xl font-medium mb-6">Languages</h3>
-                        <div class="flex flex-wrap gap-12">
+                        <div class="flex flex-wrap justify-center gap-10">
                             <a href="https://www.python.org/" target="_blank" aria-label="Python programming language">
                                 <img src="assets/images/python-svgrepo-com.svg" alt="Python logo" class="w-[80px] h-[80px] tech-badge">
                             </a>
@@ -173,9 +177,9 @@
                     </article>
                     
                     <!-- Cloud and Databases -->
-                    <article class="data bg-gray-800 rounded-lg shadow-lg p-6">
+                    <article class="data bg-gray-800 rounded-lg shadow-lg p-4">
                         <h3 class="text-xl font-medium mb-6">Cloud & Databases</h3>
-                        <div class="flex flex-wrap gap-12">
+                        <div class="flex flex-wrap gap-10">
                             <a href="https://www.snowflake.com/en/" target="_blank" aria-label="Snowflake cloud data platform">
                                 <img src="assets/images/snowflake.svg" alt="Snowflake logo" class="w-[80px] h-[80px] tech-badge">
                             </a>
@@ -198,9 +202,9 @@
                     </article>
                     
                     <!-- Other Tech -->
-                    <article class="other_tech bg-gray-800 rounded-lg shadow-lg p-6">
+                    <article class="other_tech bg-gray-800 rounded-xl shadow-lg p-4">
                         <h3 class="text-xl font-medium mb-6">Frameworks & Tools</h3>
-                        <div class="flex flex-wrap gap-12">
+                        <div class="flex flex-wrap gap-10">
                             <a href="https://developer.android.com/studio" target="_blank" aria-label="Android development platform">
                                 <img src="assets/images/Android.svg" alt="Android logo" class="w-[80px] h-[80px] tech-badge">
                             </a>

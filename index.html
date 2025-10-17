@@ -16,325 +16,412 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="src/output.css" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="assets/images/bi-favicon.svg">
+    <style>
+        .hover-lift {
+            transition: all 0.3s ease-in-out;
+        }
+        .hover-lift:hover {
+            transform: translateY(-4px) scale(1.05);
+        }
+        .hover-lift-sm {
+            transition: all 0.3s ease-in-out;
+        }
+        .hover-lift-sm:hover {
+            transform: translateY(-4px) scale(1.05);
+        }
+        .tech-badge {
+            transition: all 0.3s ease-in-out;
+        }
+        .tech-badge:hover {
+            transform: translateY(-4px) scale(1.1);
+        }
+    </style>
 </head>
 
 <body class="bg-[#141e30] bg-gradient-to-r from-[#141e30] to-[#243b55] font-roboto text-white">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-blue-300 focus:text-black">Skip to main content</a>
+
     <div id="top" class="top container mx-auto mt-20 mb-20">
 
         <!-- Left Section -->
-        <div class="left md:w-[40%] md:fixed ml-5 md:mr-0 mr-5">
+        <aside class="left md:w-[40%] md:fixed ml-5 md:mr-0 mr-5">
 
             <!-- Profile Section -->
-            <div class="profile flex gap-4 mb-6 flex-wrap">
-                <img src="assets/images/profile_pic.jpeg" class="prof_img rounded-full w-[200px] h-[200px] border-4 border-white transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110" alt="Photo of Ben Irastorza">
+            <header class="profile flex gap-4 mb-6 flex-wrap">
+                <img src="assets/images/profile_pic.jpeg" class="prof_img rounded-full w-[200px] h-[200px] border-4 border-white hover-lift" alt="Portrait photo of Ben Irastorza, a software engineer and CS student at Georgia Tech">
                 <div class="prof_desc mt-10 xl:ml-5 ml-0">
                     <h1 class="name text-5xl font-bold">Ben Irastorza</h1>
                     <h2 class="title text-xl font-medium text-gray-300">Software Engineer</h2>
                 </div>
-            </div>
+            </header>
+
             <h2 class="text-2xl font-semibold mb-4">4th-year CS Student at Georgia Tech 🐝</h2>
 
             <!-- Social Links -->
             <div class="links flex gap-x-6 mt-5 mb-10">
-                <a href="mailto:bmirastorza@gmail.com" target="_blank">
-                    <i class="fa-regular fa-envelope hover:text-orange-200 text-3xl transition delay-50 duration-300 ease-in-out hover:-translate-y-1 hover:scale-125"></i>
+                <a href="mailto:bmirastorza@gmail.com" target="_blank" aria-label="Email Ben Irastorza">
+                    <i class="fa-regular fa-envelope hover:text-orange-200 text-3xl hover-lift"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/ben-irastorza/" target="_blank">
-                    <i class="fa-brands fa-linkedin hover:text-orange-200 text-3xl transition delay-50 duration-300 ease-in-out hover:-translate-y-1 hover:scale-125"></i>
+                <a href="https://www.linkedin.com/in/ben-irastorza/" target="_blank" aria-label="Visit Ben Irastorza's LinkedIn profile">
+                    <i class="fa-brands fa-linkedin hover:text-orange-200 text-3xl hover-lift"></i>
                 </a>
-                <a href="https://github.com/birastor22" target="_blank">
-                    <i class="fa-brands fa-github hover:text-orange-200 text-3xl transition delay-50 duration-300 ease-in-out hover:-translate-y-1 hover:scale-125"></i>
+                <a href="https://github.com/birastor22" target="_blank" aria-label="Visit Ben Irastorza's GitHub profile">
+                    <i class="fa-brands fa-github hover:text-orange-200 text-3xl hover-lift"></i>
                 </a>
-                <a href="assets/data/Ben_Irastorza_Resume.pdf" target="_blank" class="text-xl text-white hover:text-orange-200 border-2 px-3 bg-gray-800 border-white hover:border-orange-200 rounded-full transition delay-50 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+                <a href="assets/data/Ben_Irastorza_Resume.pdf" target="_blank" class="text-xl text-white hover:text-orange-200 border-2 px-3 bg-gray-800 border-white hover:border-orange-200 rounded-full hover-lift" aria-label="Download Ben Irastorza's resume">
                     <i class="fa-solid fa-arrow-down text-base"></i>
                     <span class="text-base">Resume</span>
                 </a>
             </div>
 
             <!-- Navigation Section -->
-            <div class="navigation mt-12">
+            <nav class="navigation mt-12" aria-label="Main navigation">
                 <ul class="flex flex-col gap-4 text-xl">
                     <li>
-                        <div class="flex">
-                        <a href="#about" class="flex items-center gap-5 text-gray-300 hover:text-orange-200 transition delay-50 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+                        <a href="#about" class="flex items-center gap-5 text-gray-300 hover:text-orange-200 hover-lift">
                             <i class="fa-solid fa-user"></i>
                             <span>About</span>
                         </a>
-                        </div>
                     </li>
                     <li>
-                        <div class="flex">
-                        <a href="#technologies" class="flex items-center gap-3 text-gray-300 hover:text-orange-200 transition delay-50 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+                        <a href="#technologies" class="flex items-center gap-3 text-gray-300 hover:text-orange-200 hover-lift">
                             <i class="text-xl fa-solid fa-code"></i>
                             <span>Tech Skills</span>
                         </a>
-                        </div>
                     </li>
                     <li>
-                        <div class="flex">
-                        <a href="#experience" class="flex items-center gap-5 text-gray-300 hover:text-orange-200 transition delay-50 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+                        <a href="#experience" class="flex items-center gap-5 text-gray-300 hover:text-orange-200 hover-lift">
                             <i class="text-xl fa-solid fa-briefcase"></i>
                             <span>Experience</span>
                         </a>
-                        </div>
                     </li>
                     <li>
-                        <div class="flex">
-                        <a href="#projects" class="flex items-center gap-4 text-gray-300 hover:text-orange-200 transition delay-50 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+                        <a href="#projects" class="flex items-center gap-4 text-gray-300 hover:text-orange-200 hover-lift">
                             <i class="text-xl fa-solid fa-laptop-code"></i>
                             <span>Projects</span>
                         </a>
-                        </div>
                     </li>
                     <li>
-                        <div class="flex">
-                        <a href="#testimonials" class="flex items-center gap-5 text-gray-300 hover:text-orange-200 transition delay-50 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+                        <a href="#testimonials" class="flex items-center gap-5 text-gray-300 hover:text-orange-200 hover-lift">
                             <i class="text-xl fa-solid fa-quote-right"></i>
                             <span>Testimonials</span>
                         </a>
-                        </div>
                     </li>
                 </ul>
-            </div>
+            </nav>
             
-        </div>
+        </aside>
 
         <!-- Right Section -->
-        <div class="right md:ml-[50%] ml-5 md:mr-0 mr-5">
+        <main id="main-content" class="right md:ml-[50%] ml-5 md:mr-0 mr-5">
             
             <!-- About Section -->
-            <h2 id="about" class="text-3xl font-bold mb-4 mt-10 md:mt-0">About Me</h2>
-            <div class="about mb-20">
-                <p class="text-gray-300 leading-7 mb-4">
-                  My development journey began with building <a href="https://spx22247.neocities.org/" target="_blank" class="hover:text-orange-200 text-white font-semibold">my first website</a> 
-                  as a freshman in high school. Since then, I've developed various personal projects and contributed 
-                  to <a href="https://parkeravery.com/ask-the-hypercube-democratizing-predictive-analytics-with-generative-ai/#bridging-the-gap" target="_blank" class="hover:text-orange-200 text-white font-semibold">advanced Generative AI initiatives</a> 
-                  for companies like The Parker Avery Group.
-                </p>
-                <p class="text-gray-300 leading-7 mb-4">
-                    I'm passionate about developing <b>AI-driven</b> software and committed to modern development best practices.
-                    With a strong interest in <b>advanced analytics and statistics</b>, I aim to create systems capable of making meaningful, data-driven decisions.
-                </p>
-                <p class="text-gray-300 leading-7 mb-4">
-                    Outside the classroom, I stay active in campus life. As a <b>Transfer2Tech Mentor</b>, I help incoming transfer students transition to Georgia Tech.
-                    I'm also a <b>Founding Father</b> of the Beta-Kappa chapter of Lambda Chi Alpha, where I work to establish a culture of leadership, community, and personal growth.
-                </p>
-                <p class="text-gray-300 leading-7">
-                    When I'm not at my computer, I enjoy lifting weights, playing sports, listening to <a href="https://open.spotify.com/user/21z5goj4nrdhjsxr7scvfszdy?si=bef3b98cd98949dc" target="_blank" class="hover:text-orange-200 text-white font-semibold">music</a>, and spending time with friends and family.
-                </p>
-            </div>
+            <section id="about" class="mb-20">
+                <h2 class="text-3xl font-bold mb-4 mt-10 md:mt-0">About Me</h2>
+                <article class="about">
+                    <p class="text-gray-300 leading-7 mb-4">
+                        Hi! I'm Ben Irastorza, a fourth-year Computer Science student at Georgia Tech with a passion for exploring new technologies and AI tools. 
+                        From building <a href="https://spx22247.neocities.org/" target="_blank" class="hover:text-orange-200 text-white font-semibold">my first website</a> 
+                        in high school to assembling custom PCs for clients, I've always been interested in technology.
+                    </p>
+                    <p class="text-gray-300 leading-7 mb-4">
+                        My experience includes building <a href="https://parkeravery.com/ask-the-hypercube-democratizing-predictive-analytics-with-generative-ai/#bridging-the-gap" target="_blank" class="hover:text-orange-200 text-white font-semibold">advanced Generative AI solutions</a>, 
+                        developing deep learning models for healthcare analytics, and creating real-time data monitoring systems for grid stability,
+                        all while applying modern software development practices and industry-leading tools.
+                    </p>
+                    <p class="text-gray-300 leading-7 mb-4">
+                        I also value collaboration and mentorship. As a Transfer2Tech Mentor, I help incoming transfer students succeed at Georgia Tech, 
+                        and as a Founding Father of Lambda Chi Alpha's Beta-Kappa chapter, I foster leadership, community, and growth.
+                    </p>
+                    <p class="text-gray-300 leading-7">
+                        Professional recommendations consistently highlight my ability to solve complex problems and deliver results. Outside of coding, I enjoy lifting weights, playing sports,
+                        listening to <a href="https://open.spotify.com/user/21z5goj4nrdhjsxr7scvfszdy?si=bef3b98cd98949dc" target="_blank" class="hover:text-orange-200 text-white font-semibold">music</a>, 
+                        and spending time with friends and family.
+                    </p>
+                </article>
+            </section>
             
             <!-- Technical Skills Section -->
-            <h2 id="technologies" class="text-3xl font-bold mb-4">Tech Skills</h2>
-            <div class="technologies flex flex-wrap justify-center gap-12 mb-20">
+            <section id="technologies" class="mb-20">
+                <h2 class="text-3xl font-bold mb-4">Tech Skills</h2>
+                <div class="technologies flex flex-wrap justify-center gap-12">
 
-                <!-- Languages -->
-                <div class="languages bg-gray-800 rounded-lg shadow-lg">
-                    <div class="p-4">
-                        <h4 class="text-xl font-medium mb-6">Languages</h4>
+                    <!-- Languages -->
+                    <article class="languages bg-gray-800 rounded-lg shadow-lg p-6">
+                        <h3 class="text-xl font-medium mb-6">Languages</h3>
                         <div class="flex flex-wrap gap-12">
-                            <a href="https://www.python.org/" target="_blank"><img src="assets/images/python-svgrepo-com.svg" alt="Python logo" class="w-[80px] h-[80px] transition delay-0 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></a>
-                            <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank"><img src="assets/images/java-svgrepo-com.svg" alt="Java logo" class="w-[80px] h-[80px] transition delay-0 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></a>
-                            <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank"><img src="assets/images/c-1.svg" alt="C logo" class="w-[80px] h-[80px] transition delay-0 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></a>
-                            <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank"><img src="assets/images/javascript-svgrepo-com.svg" alt="JavaScript logo" class="w-[80px] h-[80px] transition delay-0 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></a>
-                            <a href="https://en.wikipedia.org/wiki/HTML" target="_blank"><img src="assets/images/html-5-svgrepo-com.svg" alt="HTML5 logo" class="w-[80px] h-[80px] transition delay-0 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></a>
-                            <a href="https://en.wikipedia.org/wiki/CSS" target="_blank"><img src="assets/images/css3-svgrepo-com.svg" alt="CSS3 logo" class="w-[80px] h-[80px] transition delay-0 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></a>
+                            <a href="https://www.python.org/" target="_blank" aria-label="Python programming language">
+                                <img src="assets/images/python-svgrepo-com.svg" alt="Python logo" class="w-[80px] h-[80px] tech-badge">
+                            </a>
+                            <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank" aria-label="Java programming language">
+                                <img src="assets/images/java-svgrepo-com.svg" alt="Java logo" class="w-[80px] h-[80px] tech-badge">
+                            </a>
+                            <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank" aria-label="C programming language">
+                                <img src="assets/images/c-1.svg" alt="C programming language logo" class="w-[80px] h-[80px] tech-badge">
+                            </a>
+                            <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" aria-label="JavaScript programming language">
+                                <img src="assets/images/javascript-svgrepo-com.svg" alt="JavaScript logo" class="w-[80px] h-[80px] tech-badge">
+                            </a>
+                            <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" aria-label="HTML5 markup language">
+                                <img src="assets/images/html-5-svgrepo-com.svg" alt="HTML5 logo" class="w-[80px] h-[80px] tech-badge">
+                            </a>
+                            <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" aria-label="CSS3 styling language">
+                                <img src="assets/images/css3-svgrepo-com.svg" alt="CSS3 logo" class="w-[80px] h-[80px] tech-badge">
+                            </a>
                         </div>
-                    </div>
-                </div>
-                
-                <!-- Cloud and Databases -->
-                <div class="data bg-gray-800 rounded-lg shadow-lg">
-                    <div class="p-4">
-                        <h4 class="text-xl font-medium mb-6">Cloud & Databases</h4>
+                    </article>
+                    
+                    <!-- Cloud and Databases -->
+                    <article class="data bg-gray-800 rounded-lg shadow-lg p-6">
+                        <h3 class="text-xl font-medium mb-6">Cloud & Databases</h3>
                         <div class="flex flex-wrap gap-12">
-                            <a href="https://www.snowflake.com/en/" target="_blank"><img src="assets/images/snowflake.svg" alt="snowflake logo" class="w-[80px] h-[80px] transition delay-0 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></a>
-                            <a href="https://www.databricks.com/" target="_blank"><img src="assets/images/databricks.svg" alt="databricks logo" class="w-[80px] h-[80px] transition delay-0 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></a>
-                            <a href="https://www.postgresql.org/" target="_blank"><img src="assets/images/postgresql-icon.svg" alt="PostgreSQL logo" class="w-[80px] h-[80px] transition delay-0 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></a>
-                            <a href="https://www.mysql.com/" target="_blank"><img src="assets/images/mysql.svg" alt="MySQL logo" class="w-[80px] h-[80px] transition delay-0 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></a>
-                            <a href="https://milvus.io/" target="_blank"><img src="assets/images/milvus.svg" alt="Milvus logo" class="w-[80px] h-[80px] transition delay-0 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></a>
-                            <a href="https://firebase.google.com/" target="_blank"><img src="assets/images/firebase.svg" alt="Firebase logo" class="w-[80px] h-[80px] transition delay-0 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></a>
+                            <a href="https://www.snowflake.com/en/" target="_blank" aria-label="Snowflake cloud data platform">
+                                <img src="assets/images/snowflake.svg" alt="Snowflake logo" class="w-[80px] h-[80px] tech-badge">
+                            </a>
+                            <a href="https://www.databricks.com/" target="_blank" aria-label="Databricks unified analytics platform">
+                                <img src="assets/images/databricks.svg" alt="Databricks logo" class="w-[80px] h-[80px] tech-badge">
+                            </a>
+                            <a href="https://www.postgresql.org/" target="_blank" aria-label="PostgreSQL database">
+                                <img src="assets/images/postgresql-icon.svg" alt="PostgreSQL logo" class="w-[80px] h-[80px] tech-badge">
+                            </a>
+                            <a href="https://www.mysql.com/" target="_blank" aria-label="MySQL database">
+                                <img src="assets/images/mysql.svg" alt="MySQL logo" class="w-[80px] h-[80px] tech-badge">
+                            </a>
+                            <a href="https://milvus.io/" target="_blank" aria-label="Milvus vector database">
+                                <img src="assets/images/milvus.svg" alt="Milvus logo" class="w-[80px] h-[80px] tech-badge">
+                            </a>
+                            <a href="https://firebase.google.com/" target="_blank" aria-label="Firebase development platform">
+                                <img src="assets/images/firebase.svg" alt="Firebase logo" class="w-[80px] h-[80px] tech-badge">
+                            </a>
                         </div>
-                    </div>
-                </div>
-                
-                <!-- Other Tech -->
-                <div class="other_tech bg-gray-800 rounded-lg shadow-lg">
-                    <div class="p-4">
-                        <h4 class="text-xl font-medium mb-6">Frameworks & Tools</h4>
+                    </article>
+                    
+                    <!-- Other Tech -->
+                    <article class="other_tech bg-gray-800 rounded-lg shadow-lg p-6">
+                        <h3 class="text-xl font-medium mb-6">Frameworks & Tools</h3>
                         <div class="flex flex-wrap gap-12">
-                            <a href="https://developer.android.com/studio" target="_blank"><img src="assets/images/Android.svg" alt="Android logo" class="w-[80px] h-[80px] transition delay-0 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></a>
-                            <a href="https://www.docker.com/" target="_blank"><img src="assets/images/docker.svg" alt="Docker logo" class="w-[80px] h-[80px] transition delay-0 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></a>
-                            <a href="https://www.atlassian.com/software/jira" target="_blank"><img src="assets/images/jira-1.svg" alt="Jira logo" class="w-[80px] h-[80px] transition delay-0 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></a>
-                            <a href="https://git-scm.com/" target="_blank"><img src="assets/images/git_light.svg" alt="Git logo" class="w-[80px] h-[80px] transition delay-0 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></a>
-                            <a href="https://anaconda.org/anaconda/conda" target="_blank"><img src="assets/images/conda.svg" alt="Anaconda logo" class="w-[80px] h-[80px] transition delay-0 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></a>
-                            <a href="https://www.figma.com/" target="_blank"><img src="assets/images/figma.svg" alt="Figma logo" class="w-[80px] h-[80px] transition delay-0 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></a>
-                            <a href="https://tailwindcss.com/" target="_blank"><img src="assets/images/tailwind.svg" alt="Tailwind logo" class="w-[80px] h-[80px] transition delay-0 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></a>
+                            <a href="https://developer.android.com/studio" target="_blank" aria-label="Android development platform">
+                                <img src="assets/images/Android.svg" alt="Android logo" class="w-[80px] h-[80px] tech-badge">
+                            </a>
+                            <a href="https://www.docker.com/" target="_blank" aria-label="Docker containerization platform">
+                                <img src="assets/images/docker.svg" alt="Docker logo" class="w-[80px] h-[80px] tech-badge">
+                            </a>
+                            <a href="https://www.atlassian.com/software/jira" target="_blank" aria-label="Jira project management tool">
+                                <img src="assets/images/jira-1.svg" alt="Jira logo" class="w-[80px] h-[80px] tech-badge">
+                            </a>
+                            <a href="https://git-scm.com/" target="_blank" aria-label="Git version control system">
+                                <img src="assets/images/git_light.svg" alt="Git logo" class="w-[80px] h-[80px] tech-badge">
+                            </a>
+                            <a href="https://anaconda.org/anaconda/conda" target="_blank" aria-label="Conda package manager">
+                                <img src="assets/images/conda.svg" alt="Anaconda Conda logo" class="w-[80px] h-[80px] tech-badge">
+                            </a>
+                            <a href="https://www.figma.com/" target="_blank" aria-label="Figma design tool">
+                                <img src="assets/images/figma.svg" alt="Figma logo" class="w-[80px] h-[80px] tech-badge">
+                            </a>
+                            <a href="https://tailwindcss.com/" target="_blank" aria-label="Tailwind CSS framework">
+                                <img src="assets/images/tailwind.svg" alt="Tailwind CSS logo" class="w-[80px] h-[80px] tech-badge">
+                            </a>
                         </div>
-                    </div>
-                </div>
+                    </article>
 
-            </div>
+                </div>
+            </section>
 
             <!-- Experience Section -->
-            <h2 id="experience" class="text-3xl font-bold text-white mb-6">Experience</h2>
-            <div class="experience max-w-3xl space-y-10 mb-20">
+            <section id="experience" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-6">Experience</h2>
+                <div class="experience max-w-3xl space-y-10">
 
-                <!-- First Experience Item -->
-                <div class="relative pl-4 border-l-2 border-blue-300">
-                    <!-- Timeline dot -->
-                    <div class="absolute w-3 h-3 bg-blue-300 rounded-full -left-[7px] top-2"></div>
-                    <!-- Content -->
-                    <div class="space-y-2">
-                        <h3 class="text-xl font-semibold text-white">
-                            Advanced Analytics Intern - 
-                            <a href="https://www.ucb.com/" target="_blank" class="hover:text-orange-200 text-white font-semibold">UCB</a>
-                        </h3>
-                        <h4 class="text-blue-300 font-medium">May 2025 - Aug 2025</h4>
-                        <!-- Description -->
-                        <div class="space-y-3 text-gray-300">
-                            <p class="leading-relaxed">
-                                Developed a BERT-based deep learning model to enable advanced patient similarity analysis.
-                            </p>
-                            <p class="leading-relaxed">
-                                Delivered actionable mortality insights to the medical team by performing delayed entry Kaplan–Meier survival modeling on commercial drug data.
-                            </p>
+                    <!-- First Experience Item -->
+                    <article class="relative pl-4 border-l-2 border-blue-300">
+                        <!-- Timeline dot -->
+                        <div class="absolute w-3 h-3 bg-blue-300 rounded-full -left-[7px] top-2"></div>
+                        <!-- Content -->
+                        <div class="space-y-2">
+                            <h3 class="text-xl font-semibold text-white">
+                                Bulk Power Operations Intern - 
+                                <a href="https://www.southerncompany.com/" target="_blank" class="hover:text-orange-200 text-white font-semibold">Southern Company</a>
+                            </h3>
+                            <h4 class="text-blue-300 font-medium">Aug 2025 - Present</h4>
+                            <!-- Description -->
+                            <div class="space-y-3 text-gray-300">
+                                <p class="leading-relaxed">
+                                    Developing a real-time monitoring dashboard using AVEVA PI System Explorer and PI Vision to visualize and track data center load volatility, allowing the balancing authority to make proactive grid management decisions.
+                                </p>
+                                <p class="leading-relaxed">
+                                    Built an XGBoost-based forecasting model that improved winter peak load accuracy and model explainability, enabling more reliable demand planning and operational efficiency.
+                                </p>
+                            </div>
+                            <!-- Tools used -->
+                            <div class="flex flex-wrap gap-2 mt-5">
+                                <span class="px-3 py-1 text-sm bg-blue-900/50 text-blue-300 rounded-full tech-badge">Python</span>
+                                <span class="px-3 py-1 text-sm bg-blue-900/50 text-blue-300 rounded-full tech-badge">AVEVA PI</span>
+                                <span class="px-3 py-1 text-sm bg-blue-900/50 text-blue-300 rounded-full tech-badge">Power BI</span>
+                            </div>
                         </div>
-                        <!-- Tools used -->
-                        <div class="flex flex-wrap gap-2 mt-5">
-                            <span class="px-3 py-1 text-sm bg-blue-900/50 text-blue-300 rounded-full transition delay-0 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">Python</span>
-                            <span class="px-3 py-1 text-sm bg-blue-900/50 text-blue-300 rounded-full transition delay-0 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">Snowflake</span>
-                            <span class="px-3 py-1 text-sm bg-blue-900/50 text-blue-300 rounded-full transition delay-0 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">Databricks</span>
-                        </div>
-                    </div>
-                </div>
+                    </article>
 
-                <!-- Second Experience Item -->
-                <div class="relative pl-4 border-l-2 border-blue-300">
-                    <!-- Timeline dot -->
-                    <div class="absolute w-3 h-3 bg-blue-300 rounded-full -left-[7px] top-2"></div>
-                    <!-- Content -->
-                    <div class="space-y-2">
-                        <h3 class="text-xl font-semibold text-white">
-                            Undergraduate Researcher - 
-                            <a href="https://vip.gatech.edu/teams/vvo" target="_blank" class="hover:text-orange-200 text-white font-semibold">Automotive LiDAR Lab</a>
-                        </h3>
-                        <h4 class="text-blue-300 font-medium">Aug 2024 - May 2025</h4>
-                        <!-- Description -->
-                        <div class="space-y-3 text-gray-300">
-                            <p class="leading-relaxed">
-                                Developing edge detection algorithms and an automated CI/CD test system for an autonomous driving vehicle with LiDAR.
-                            </p>
-                            <p class="leading-relaxed">
-                                Integrating interface software with ROS2 to enable seamless communication between the vehicle's software system and the robot's hardware.
-                            </p>
+                    <!-- Second Experience Item -->
+                    <article class="relative pl-4 border-l-2 border-blue-300">
+                        <!-- Timeline dot -->
+                        <div class="absolute w-3 h-3 bg-blue-300 rounded-full -left-[7px] top-2"></div>
+                        <!-- Content -->
+                        <div class="space-y-2">
+                            <h3 class="text-xl font-semibold text-white">
+                                Advanced Analytics Intern - 
+                                <a href="https://www.ucb.com/" target="_blank" class="hover:text-orange-200 text-white font-semibold">UCB</a>
+                            </h3>
+                            <h4 class="text-blue-300 font-medium">May 2025 - Aug 2025</h4>
+                            <!-- Description -->
+                            <div class="space-y-3 text-gray-300">
+                                <p class="leading-relaxed">
+                                    Built a BERT-based deep learning model to enable advanced patient similarity analysis.
+                                </p>
+                                <p class="leading-relaxed">
+                                    Delivered actionable mortality insights to the medical team by performing delayed entry Kaplan–Meier survival modeling on commercial drug data.
+                                </p>
+                            </div>
+                            <!-- Tools used -->
+                            <div class="flex flex-wrap gap-2 mt-5">
+                                <span class="px-3 py-1 text-sm bg-blue-900/50 text-blue-300 rounded-full tech-badge">Python</span>
+                                <span class="px-3 py-1 text-sm bg-blue-900/50 text-blue-300 rounded-full tech-badge">Snowflake</span>
+                                <span class="px-3 py-1 text-sm bg-blue-900/50 text-blue-300 rounded-full tech-badge">Databricks</span>
+                            </div>
                         </div>
-                        <!-- Tools used -->
-                        <div class="flex flex-wrap gap-2 mt-5">
-                            <span class="px-3 py-1 text-sm bg-blue-900/50 text-blue-300 rounded-full transition delay-0 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">Python</span>
-                            <span class="px-3 py-1 text-sm bg-blue-900/50 text-blue-300 rounded-full transition delay-0 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">ROS2</span>
-                            <span class="px-3 py-1 text-sm bg-blue-900/50 text-blue-300 rounded-full transition delay-0 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">Docker</span>
-                        </div>
-                    </div>
-                </div>
-            
-                <!-- Third Experience Item -->
-                <div class="relative pl-4 border-l-2 border-blue-300">
-                    <!-- Timeline dot -->
-                    <div class="absolute w-3 h-3 bg-blue-300 rounded-full -left-[7px] top-2"></div>
-                    <!-- Content -->
-                    <div class="space-y-2">
-                        <h3 class="text-xl font-semibold text-white">
-                            Software Engineer Intern - 
-                            <a href="https://parkeravery.com" target="_blank" class="hover:text-orange-200 text-white font-semibold">The Parker Avery Group</a>
-                        </h3>
-                        <h4 class="text-blue-300 font-medium">May 2024 - August 2024</h4>
-                        <!-- Description -->
-                        <div class="space-y-3 text-gray-300">
-                            <p class="leading-relaxed">
-                                Played a key role in advancing the firm's Generative AI initiatives, including developing a custom AI agent for text-to-SQL translation and data visualization.
-                            </p>
-                            <p class="leading-relaxed">
-                                Participated in biweekly sprint meetings, presenting development updates and collaborating on project milestones.
-                            </p>
-                        </div>
-                        <!-- Tools used -->
-                        <div class="flex flex-wrap gap-2 mt-5">
-                          <span class="px-3 py-1 text-sm bg-blue-900/50 text-blue-300 rounded-full transition delay-0 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">Python</span>
-                          <span class="px-3 py-1 text-sm bg-blue-900/50 text-blue-300 rounded-full transition delay-0 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">PostgreSQL</span>
-                          <span class="px-3 py-1 text-sm bg-blue-900/50 text-blue-300 rounded-full transition delay-0 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">Jira</span>
-                        </div>
-                    </div>
-                </div>
+                    </article>
 
-            </div>
+                    <!-- Third Experience Item -->
+                    <article class="relative pl-4 border-l-2 border-blue-300">
+                        <!-- Timeline dot -->
+                        <div class="absolute w-3 h-3 bg-blue-300 rounded-full -left-[7px] top-2"></div>
+                        <!-- Content -->
+                        <div class="space-y-2">
+                            <h3 class="text-xl font-semibold text-white">
+                                Undergraduate Researcher - 
+                                <a href="https://vip.gatech.edu/teams/vvo" target="_blank" class="hover:text-orange-200 text-white font-semibold">Automotive LiDAR Lab</a>
+                            </h3>
+                            <h4 class="text-blue-300 font-medium">Aug 2024 - May 2025</h4>
+                            <!-- Description -->
+                            <div class="space-y-3 text-gray-300">
+                                <p class="leading-relaxed">
+                                    Developed edge detection algorithms and an automated CI/CD test system for an autonomous driving vehicle with LiDAR.
+                                </p>
+                                <p class="leading-relaxed">
+                                    Designed and implemented unit tests to validate system stability and ensure reliable deployment.
+                                </p>
+                            </div>
+                            <!-- Tools used -->
+                            <div class="flex flex-wrap gap-2 mt-5">
+                                <span class="px-3 py-1 text-sm bg-blue-900/50 text-blue-300 rounded-full tech-badge">Python</span>
+                                <span class="px-3 py-1 text-sm bg-blue-900/50 text-blue-300 rounded-full tech-badge">ROS2</span>
+                                <span class="px-3 py-1 text-sm bg-blue-900/50 text-blue-300 rounded-full tech-badge">Docker</span>
+                            </div>
+                        </div>
+                    </article>
+                
+                    <!-- Fourth Experience Item -->
+                    <article class="relative pl-4 border-l-2 border-blue-300">
+                        <!-- Timeline dot -->
+                        <div class="absolute w-3 h-3 bg-blue-300 rounded-full -left-[7px] top-2"></div>
+                        <!-- Content -->
+                        <div class="space-y-2">
+                            <h3 class="text-xl font-semibold text-white">
+                                Software Engineer Intern - 
+                                <a href="https://parkeravery.com" target="_blank" class="hover:text-orange-200 text-white font-semibold">The Parker Avery Group</a>
+                            </h3>
+                            <h4 class="text-blue-300 font-medium">May 2024 - August 2024</h4>
+                            <!-- Description -->
+                            <div class="space-y-3 text-gray-300">
+                                <p class="leading-relaxed">
+                                    Played a key role in advancing the firm's Generative AI initiatives, including developing a custom AI agent for text-to-SQL translation and data visualization.
+                                </p>
+                                <p class="leading-relaxed">
+                                    Participated in biweekly sprint meetings, presenting development updates and collaborating on project milestones.
+                                </p>
+                            </div>
+                            <!-- Tools used -->
+                            <div class="flex flex-wrap gap-2 mt-5">
+                              <span class="px-3 py-1 text-sm bg-blue-900/50 text-blue-300 rounded-full tech-badge">Python</span>
+                              <span class="px-3 py-1 text-sm bg-blue-900/50 text-blue-300 rounded-full tech-badge">PostgreSQL</span>
+                              <span class="px-3 py-1 text-sm bg-blue-900/50 text-blue-300 rounded-full tech-badge">Jira</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
 
             <!-- Projects Section -->
-            <h2 id="projects" class="text-3xl font-bold text-white mb-4">Projects</h2>
-            <div class="projects mb-20">
-                <div class="flex flex-wrap gap-y-16">
+            <section id="projects" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-4">Projects</h2>
+                <div class="projects">
+                    <div class="flex flex-wrap gap-y-16">
 
-                      <!-- Project 1 -->
-                    <div class="w-5/6">
-                      <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
-                          <img src="assets/images/project-1.jpeg" alt="Fandom logo" class="w-full h-48 object-cover">
-                          <div class="p-4">
-                              <h3 class="text-xl font-semibold text-white">Wiki Retriever</h3>
-                              <p class="text-gray-400 mt-2">Get precise answers from multiple wiki sites through a Retrieval-Augmented Generation (RAG) pipeline, enabling seamless, domain-specific question answering.
-                                <a href="https://github.com/birastor22/wiki-project" target="_blank"><i class="fa-brands fa-github hover:text-orange-200"></i></a>
-                              </p>
-                          </div>
-                      </div>
+                        <!-- Project 1 -->
+                        <article class="w-5/6">
+                            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover-lift-sm">
+                                <img src="assets/images/project-1.jpeg" alt="Wiki Retriever project featuring Fandom wiki integration" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h3 class="text-xl font-semibold text-white">Wiki Retriever</h3>
+                                    <p class="text-gray-400 mt-2">Get precise answers from multiple wiki sites through a Retrieval-Augmented Generation (RAG) pipeline, enabling seamless, domain-specific question answering.
+                                        <a href="https://github.com/birastor22/wiki-project" target="_blank" aria-label="View Wiki Retriever project on GitHub"><i class="fa-brands fa-github hover:text-orange-200"></i></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Project 2 -->
+                        <article class="w-5/6">
+                            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover-lift-sm">
+                                <img src="assets/images/project-2.jpeg" alt="Enhanced Spotify Wrapped application interface" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <h3 class="text-xl font-semibold text-white">Enhanced Spotify Wrapped</h3>
+                                    <p class="text-gray-400 mt-2">A better spotify wrapped experience, enhanced with personalized AI-driven functionality.
+                                        <a href="https://github.com/nicksadri/spotify-wrapped-app" target="_blank" aria-label="View Enhanced Spotify Wrapped project on GitHub"><i class="fa-brands fa-github hover:text-orange-200"></i></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
                     </div>
-
-                    <!-- Project 2 -->
-                    <div class="w-5/6">
-                      <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
-                          <img src="assets/images/project-2.jpeg" alt="Custom Spotify Wrapped logo" class="w-full h-48 object-cover">
-                          <div class="p-4">
-                              <h3 class="text-xl font-semibold text-white">Enhanced Spotify Wrapped</h3>
-                              <p class="text-gray-400 mt-2">A better spotify wrapped experience, enhanced with personalized AI-driven functionality.
-                                <a href="https://github.com/nicksadri/spotify-wrapped-app" target="_blank"><i class="fa-brands fa-github hover:text-orange-200"></i></a>
-                              </p>
-                          </div>
-                      </div>
-                    </div>
-
                 </div>
-            </div>
+            </section>
 
             <!-- Testimonials Section -->
-            <h2 class="text-3xl font-bold text-white mb-4">Testimonials</h2>
-            <div id="testimonials" class="testimonials mb-20">
-                <div class="flex flex-wrap gap-y-16">
-                    <!-- First Testimonial -->
-                    <div class="bg-gray-800 rounded-lg shadow-lg">
-                        <p class="text-xl text-gray-300 italic">"Ben made a real impact during his time with us leveraging his computer science and AI background."</p>
-                        <p class="mt-5 text-blue-300 font-semibold">– Srihari Jaganathan, Director of Advanced Analytics at UCB</p>
-                    </div>
+            <section id="testimonials" class="mb-20">
+                <h2 class="text-3xl font-bold text-white mb-4">Testimonials</h2>
+                <div class="testimonials">
+                    <div class="flex flex-wrap gap-y-16">
+                        <!-- First Testimonial -->
+                        <article class="bg-gray-800 rounded-lg shadow-lg p-6">
+                            <p class="text-xl text-gray-300 italic">"Ben made a real impact during his time with us leveraging his computer science and AI background."</p>
+                            <p class="mt-5 text-blue-300 font-semibold">– Srihari Jaganathan, Director of Advanced Analytics at UCB</p>
+                        </article>
 
-                    <!-- Second Testimonial -->
-                    <div class="bg-gray-800 rounded-lg shadow-lg">
-                        <p class="text-xl text-gray-300 italic">"Ben's dedication and innovative contributions have been invaluable to our team."</p>
-                        <p class="mt-5 text-blue-300 font-semibold">– Sam Iosevich, Chief Analytics Officer at The Parker Avery Group</p>
+                        <!-- Second Testimonial -->
+                        <article class="bg-gray-800 rounded-lg shadow-lg p-6">
+                            <p class="text-xl text-gray-300 italic">"Ben's dedication and innovative contributions have been invaluable to our team."</p>
+                            <p class="mt-5 text-blue-300 font-semibold">– Sam Iosevich, Chief Analytics Officer at The Parker Avery Group</p>
+                        </article>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <!-- Back to Top Button -->
             <div class="top_button mb-20">
-                <a href="#top" class="text-xl text-white hover:text-orange-200 border-2 py-2 px-4 bg-gray-800 border-white hover:border-orange-200 rounded-full">
+                <a href="#top" class="text-xl text-white hover:text-orange-200 border-2 py-2 px-4 bg-gray-800 border-white hover:border-orange-200 rounded-full hover-lift">
                     <i class="fa-solid fa-arrow-up text-xl"></i>
                     <span>Back to Top</span>
                 </a>
             </div>
 
-        </div>
+        </main>
 
     </div>
 
     <footer class="flex justify-center items-center py-4 w-full">
-        <span class="text-sm">© 2025 | Built by Ben Irastorza | All Rights Reserved.</span>
+        <p class="text-sm">© 2025 | Built by Ben Irastorza | All Rights Reserved.</p>
     </footer>
     
     <!-- Link to index.js -->

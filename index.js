@@ -6,10 +6,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const targetElement = document.querySelector(targetId);
         
         if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop - 20,
-                behavior: 'smooth'
-            });
+            // Check if this is the back to top button
+            if (targetId === '#top') {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            } else {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 20,
+                    behavior: 'smooth'
+                });
+            }
         }
     });
 });

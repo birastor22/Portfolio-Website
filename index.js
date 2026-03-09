@@ -91,6 +91,25 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// EmailJS — replace placeholders with your actual keys from emailjs.com
+emailjs.init("_WFvSCIzf1Bq61ME5");
+
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const status = document.getElementById("form-status");
+    emailjs.sendForm("service_yxv3px7", "template_6ug4t2n", this)
+        .then(() => {
+            status.textContent = "Message sent! I'll get back to you soon.";
+            status.className = "text-base text-white";
+            status.classList.remove("hidden");
+            this.reset();
+        }, () => {
+            status.textContent = "Something went wrong. Please try emailing me directly.";
+            status.className = "text-base text-red-400";
+            status.classList.remove("hidden");
+        });
+});
+
 // Initialize Typed.js animations
 function initializeTyped() {
     // Create containers for typed elements

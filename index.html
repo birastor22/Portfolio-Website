@@ -18,6 +18,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'">
     <link href="src/output.css" rel="stylesheet">
+    <style>
+        #contact-form input,
+        #contact-form textarea {
+            background-color: #374151; /* gray-700 */
+            color: #ffffff;
+        }
+        #contact-form input::placeholder,
+        #contact-form textarea::placeholder {
+            color: #9ca3af; /* gray-400 */
+        }
+        #contact-form input:-webkit-autofill,
+        #contact-form input:-webkit-autofill:focus {
+            -webkit-box-shadow: 0 0 0 1000px #374151 inset;
+            -webkit-text-fill-color: #ffffff;
+        }
+    </style>
     <link rel="icon" type="image/svg+xml" href="assets/images/bi-favicon.svg">
     <style>
         .hover-lift {
@@ -112,6 +128,12 @@
                         <a href="#testimonials" class="flex items-center gap-5 text-gray-300 hover:text-orange-200 hover-lift">
                             <i class="text-xl fa-solid fa-quote-right"></i>
                             <span>Testimonials</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="flex items-center gap-5 text-gray-300 hover:text-orange-200 hover-lift">
+                            <i class="text-xl fa-solid fa-envelope"></i>
+                            <span>Contact</span>
                         </a>
                     </li>
                 </ul>
@@ -250,7 +272,7 @@
                         <div class="space-y-2">
                             <h3 class="text-xl font-semibold text-white">
                                 Incoming Software Engineer Intern - 
-                                <a href="https://www.capitalone.com/" target="_blank" class="hover:text-orange-200 text-white font-semibold">Capital One</a>
+                                <a href="https://www.capitalone.com/" target="_blank" class="hover:text-orange-200 text-white font-semibold underline">Capital One</a>
                             </h3>
                             <h4 class="text-blue-300 font-medium">Jun 2026 - Aug 2026</h4>
                             <!-- Description -->
@@ -276,7 +298,7 @@
                         <div class="space-y-2">
                             <h3 class="text-xl font-semibold text-white">
                                 Bulk Power Operations Intern - 
-                                <a href="https://www.southerncompany.com/" target="_blank" class="hover:text-orange-200 text-white font-semibold">Southern Company</a>
+                                <a href="https://www.southerncompany.com/" target="_blank" class="hover:text-orange-200 text-white font-semibold underline">Southern Company</a>
                             </h3>
                             <h4 class="text-blue-300 font-medium">Aug 2025 - Dec 2025</h4>
                             <!-- Description -->
@@ -308,7 +330,7 @@
                         <div class="space-y-2">
                             <h3 class="text-xl font-semibold text-white">
                                 Advanced Analytics Intern - 
-                                <a href="https://www.ucb.com/" target="_blank" class="hover:text-orange-200 text-white font-semibold">UCB</a>
+                                <a href="https://www.ucb.com/" target="_blank" class="hover:text-orange-200 text-white font-semibold underline">UCB</a>
                             </h3>
                             <h4 class="text-blue-300 font-medium">May 2025 - Aug 2025</h4>
                             <!-- Description -->
@@ -340,7 +362,7 @@
                         <div class="space-y-2">
                             <h3 class="text-xl font-semibold text-white">
                                 Software Engineer Intern - 
-                                <a href="https://parkeravery.com" target="_blank" class="hover:text-orange-200 text-white font-semibold">The Parker Avery Group</a>
+                                <a href="https://parkeravery.com" target="_blank" class="hover:text-orange-200 text-white font-semibold underline">The Parker Avery Group</a>
                             </h3>
                             <h4 class="text-blue-300 font-medium">May 2024 - August 2024</h4>
                             <!-- Description -->
@@ -422,8 +444,38 @@
                 </div>
             </section>
 
+            <!-- Contact Section -->
+            <section id="contact" class="mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4">Contact Me</h2>
+                <div class="bg-gray-800 rounded-lg shadow-lg p-6">
+                    <form id="contact-form">
+                        <div class="mb-4">
+                            <label for="from_name" class="block text-gray-300 mb-1">Name</label>
+                            <input type="text" id="from_name" name="from_name" required
+                                class="w-full bg-gray-700 text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-200">
+                        </div>
+                        <div class="mb-4">
+                            <label for="from_email" class="block text-gray-300 mb-1">Email</label>
+                            <input type="email" id="from_email" name="from_email" required
+                                class="w-full bg-gray-700 text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-200">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-300 mb-1">Message</label>
+                            <textarea id="message" name="message" rows="5" required
+                                class="w-full bg-gray-700 text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-200"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="mb-4 text-xl text-white hover:text-orange-200 border-2 py-2 px-4 bg-gray-800 border-white hover:border-orange-200 rounded-full hover-lift inline-flex items-center gap-2">
+                            <i class="fa-solid fa-paper-plane text-base"></i>
+                            <span class="text-base">Send Message</span>
+                        </button>
+                        <p id="form-status" class="text-base hidden"></p>
+                    </form>
+                </div>
+            </section>
+
             <!-- Back to Top Button -->
-            <div class="top_button flex justify-center">
+            <div class="top_button flex justify-center md:hidden">
                 <a href="#top" class="text-xl text-white hover:text-orange-200 border-2 py-2 px-4 bg-gray-800 border-white hover:border-orange-200 rounded-full hover-lift inline-flex items-center gap-2">
                     <i class="fa-solid fa-arrow-up text-xl"></i>
                     <span>Back to Top</span>
@@ -438,6 +490,7 @@
         <p class="text-sm">© 2026 | Built by Ben Irastorza | All Rights Reserved.</p>
     </footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script defer src="index.js"></script>

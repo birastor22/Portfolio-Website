@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// EmailJS — replace placeholders with your actual keys from emailjs.com
+// EmailJS
 emailjs.init("_WFvSCIzf1Bq61ME5");
 
 document.getElementById("contact-form").addEventListener("submit", function(e) {

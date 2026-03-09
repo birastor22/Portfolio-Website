@@ -24,11 +24,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
-    // Add CDN script for Typed.js
-    const typedScript = document.createElement('script');
-    typedScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js';
-    typedScript.onload = initializeTyped;
-    document.head.appendChild(typedScript);
+    initializeTyped();
 
     // Initialize particles.js
     particlesJS('particles-js', {

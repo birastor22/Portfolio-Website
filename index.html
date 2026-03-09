@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ben Irastorza | Portfolio Website</title>
     <meta name="description" content="Ben Irastorza Portfolio Website.">
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <meta name="keywords" content="Ben Irastorza, Ben Irastorza Portfolio, Web Developer Ben Irastorza, Ben Irastorza Website, Portfolio Website, Web Development">
     <meta name="author" content="Ben Irastorza">
     <link rel="canonical" href="https://www.ben-irastorza.dev/" />
     <meta property="og:title" content="Ben Irastorza Portfolio Website.">
     <meta property="og:description" content="Ben Irastorza Portfolio Website.">
-    <meta property="og:image" content="assets/images/og_image.jpeg">
+    <meta property="og:image" content="assets/images/og_image.webp">
     <meta property="og:url" content="https://www.ben-irastorza.dev/">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'">
     <link href="src/output.css" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="assets/images/bi-favicon.svg">
     <style>
@@ -54,7 +55,7 @@
 
             <!-- Profile Section -->
             <header class="profile flex gap-4 mb-6 flex-wrap">
-                <img src="assets/images/profile_pic.jpeg" class="prof_img rounded-full w-[200px] h-[200px] md:w-[175px] md:h-[175px] lg:w-[200px] lg:h-[200px] border-4 border-white" alt="Portrait photo of Ben Irastorza, a software engineer and CS student at Georgia Tech">
+                <img src="assets/images/profile-pic.webp" class="prof_img rounded-full w-[200px] h-[200px] md:w-[175px] md:h-[175px] lg:w-[200px] lg:h-[200px] border-4 border-white" alt="Portrait photo of Ben Irastorza, a software engineer and CS student at Georgia Tech">
                 <div class="prof_desc mt-10 xl:ml-5 ml-0">
                     <h1 class="name text-5xl font-bold min-w-[300px] min-h-[48px]">Ben Irastorza</h1>
                     <h2 class="title text-xl font-medium text-gray-300 min-w-[300px] min-h-[28px]">Software Engineer</h2>
@@ -139,10 +140,13 @@
                         I also value collaboration and mentorship. As a Transfer2Tech Mentor, I help incoming transfer students succeed at Georgia Tech, 
                         and as a Founding Father of Lambda Chi Alpha's Beta-Kappa chapter, I foster leadership, community, and growth.
                     </p>
-                    <p class="text-gray-300 leading-7">
-                        Professional recommendations consistently highlight my ability to solve complex problems and deliver results. Outside of coding, I enjoy lifting weights, playing sports,
+                    <p class="text-gray-300 leading-7 mb-4">
+                        Professional recommendations consistently highlight my ability to solve complex problems and deliver results. Outside of building, I enjoy lifting weights, playing sports,
                         listening to <a href="https://open.spotify.com/user/21z5goj4nrdhjsxr7scvfszdy?si=bef3b98cd98949dc" target="_blank" rel="noopener noreferrer" class="hover:text-orange-200 text-white font-semibold">music</a>, 
                         and spending time with friends and family.
+                    </p>
+                    <p class="text-gray-300 leading-7">
+                        I'm always open to chatting about new projects, AI, or just connecting. Feel free to reach out!
                     </p>
                 </article>
             </section>
@@ -157,22 +161,22 @@
                         <h3 class="text-xl font-medium mb-6">Languages</h3>
                         <div class="flex flex-wrap gap-10">
                             <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer" aria-label="Python programming language">
-                                <img src="assets/images/python-svgrepo-com.svg" alt="Python logo" class="w-[80px] h-[80px] tech-badge">
+                                <img src="assets/images/python.svg" alt="Python logo" class="w-[80px] h-[80px] tech-badge">
                             </a>
                             <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank" rel="noopener noreferrer" aria-label="Java programming language">
-                                <img src="assets/images/java-svgrepo-com.svg" alt="Java logo" class="w-[80px] h-[80px] tech-badge">
+                                <img src="assets/images/java.svg" alt="Java logo" class="w-[80px] h-[80px] tech-badge">
                             </a>
                             <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank" rel="noopener noreferrer" aria-label="C programming language">
-                                <img src="assets/images/c-1.svg" alt="C programming language logo" class="w-[80px] h-[80px] tech-badge">
+                                <img src="assets/images/c.svg" alt="C programming language logo" class="w-[80px] h-[80px] tech-badge">
                             </a>
                             <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener noreferrer" aria-label="JavaScript programming language">
-                                <img src="assets/images/javascript-svgrepo-com.svg" alt="JavaScript logo" class="w-[80px] h-[80px] tech-badge">
+                                <img src="assets/images/javascript.svg" alt="JavaScript logo" class="w-[80px] h-[80px] tech-badge">
                             </a>
                             <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noopener noreferrer" aria-label="HTML5 markup language">
-                                <img src="assets/images/html-5-svgrepo-com.svg" alt="HTML5 logo" class="w-[80px] h-[80px] tech-badge">
+                                <img src="assets/images/html5.svg" alt="HTML5 logo" class="w-[80px] h-[80px] tech-badge">
                             </a>
                             <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noopener noreferrer" aria-label="CSS3 styling language">
-                                <img src="assets/images/css3-svgrepo-com.svg" alt="CSS3 logo" class="w-[80px] h-[80px] tech-badge">
+                                <img src="assets/images/css3.svg" alt="CSS3 logo" class="w-[80px] h-[80px] tech-badge">
                             </a>
                         </div>
                     </article>
@@ -188,7 +192,7 @@
                                 <img src="assets/images/databricks.svg" alt="Databricks logo" class="w-[80px] h-[80px] tech-badge">
                             </a>
                             <a href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer" aria-label="PostgreSQL database">
-                                <img src="assets/images/postgresql-icon.svg" alt="PostgreSQL logo" class="w-[80px] h-[80px] tech-badge">
+                                <img src="assets/images/postgresql.svg" alt="PostgreSQL logo" class="w-[80px] h-[80px] tech-badge">
                             </a>
                             <a href="https://www.mysql.com/" target="_blank" rel="noopener noreferrer" aria-label="MySQL database">
                                 <img src="assets/images/mysql.svg" alt="MySQL logo" class="w-[80px] h-[80px] tech-badge">
@@ -207,16 +211,16 @@
                         <h3 class="text-xl font-medium mb-6">Frameworks & Tools</h3>
                         <div class="flex flex-wrap gap-10">
                             <a href="https://developer.android.com/studio" target="_blank" rel="noopener noreferrer" aria-label="Android development platform">
-                                <img src="assets/images/Android.svg" alt="Android logo" class="w-[80px] h-[80px] tech-badge">
+                                <img src="assets/images/android.svg" alt="Android logo" class="w-[80px] h-[80px] tech-badge">
                             </a>
                             <a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer" aria-label="Docker containerization platform">
                                 <img src="assets/images/docker.svg" alt="Docker logo" class="w-[80px] h-[80px] tech-badge">
                             </a>
                             <a href="https://www.atlassian.com/software/jira" target="_blank" rel="noopener noreferrer" aria-label="Jira project management tool">
-                                <img src="assets/images/jira-1.svg" alt="Jira logo" class="w-[80px] h-[80px] tech-badge">
+                                <img src="assets/images/jira.svg" alt="Jira logo" class="w-[80px] h-[80px] tech-badge">
                             </a>
                             <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer" aria-label="Git version control system">
-                                <img src="assets/images/git_light.svg" alt="Git logo" class="w-[80px] h-[80px] tech-badge">
+                                <img src="assets/images/git.svg" alt="Git logo" class="w-[80px] h-[80px] tech-badge">
                             </a>
                             <a href="https://anaconda.org/anaconda/conda" target="_blank" rel="noopener noreferrer" aria-label="Conda package manager">
                                 <img src="assets/images/conda.svg" alt="Anaconda Conda logo" class="w-[80px] h-[80px] tech-badge">
@@ -278,13 +282,13 @@
                             <!-- Description -->
                             <div class="space-y-3 text-gray-300">
                                 <p class="leading-relaxed">
-                                    Cut data retrieval time by ~97% with a Python CLI using AVEVA PI Web API, automating ingestion and replacing manual Excel processes.
+                                    Reduced data retrieval time by ~97% by developing a Python CLI using the AVEVA PI Web API, integrated into shell scripts for fully automated data ingestion.
                                 </p>
                                 <p class="leading-relaxed">
-                                    Built a real-time monitoring system with PI System Explorer and PI Vision to track data center load volatility, enabling proactive decisions.
+                                    Engineered a real-time AVEVA PI Vision monitoring system for high-volatility data center loads, enabling anticipatory generation dispatch to mitigate ACE swings.
                                 </p>
                                 <p class="leading-relaxed">
-                                    Improved winter peak load forecasts, reducing MAPE by 47% with an XGBoost model for more accurate demand predictions.
+                                    Established the organization's best winter load-forecasting methodology using XGBoost, reducing winter-peak MAPE by 47% with meteorological inputs and load-growth analysis.
                                 </p>
                             </div>
                             <!-- Tools used -->
@@ -310,13 +314,13 @@
                             <!-- Description -->
                             <div class="space-y-3 text-gray-300">
                                 <p class="leading-relaxed">
-                                    Developed a BERT-based model to encode patient histories as vectors, enabling identification of undiagnosed patients and improved clinical trial cohort selection.
+                                    Built a BERT-based model to encode longitudinal patient histories into vector embeddings, to enable identification of undiagnosed patients, early risk flagging, and improved clinical trial cohort selection.
                                 </p>
                                 <p class="leading-relaxed">
-                                    Performed delayed-entry Kaplan–Meier survival analysis with Python’s lifelines package, providing actionable mortality insights for patient risk assessment.
+                                    Performed delayed-entry Kaplan-Meier survival analysis using Python's lifelines package, delivering actionable mortality insights for patient risk assessment.
                                 </p>
                                 <p class="leading-relaxed">
-                                    Analyzed CDKL5 Deficiency Disorder subpopulations via Komodo Health’s Sentinel, validating anti-epileptic drug usage to support clinical research.
+                                    Conducted subpopulation analysis of CDKL5 Deficiency Disorder data via Komodo Health's Sentinel, validating anti-epileptic drug usage patterns to support clinical research.
                                 </p>
                             </div>
                             <!-- Tools used -->
@@ -342,16 +346,16 @@
                             <!-- Description -->
                             <div class="space-y-3 text-gray-300">
                                 <p class="leading-relaxed">
-                                    Built an AI-powered app enabling client executives to query analytics via natural language, reducing analytics team overhead.
+                                    Developed an AI analytics agent trained on client business semantics, letting executives query metrics in natural language and auto-generate dashboards, reducing analytics team backlog.
                                 </p>
                                 <p class="leading-relaxed">
-                                    Cut AI processing costs by 50% and improved efficiency using OpenAI’s Batch API for large-scale asynchronous processing jobs.
+                                    Improved agent response accuracy by 16% by creating a specialized natural-language-to-PostgreSQL training dataset, resolving forecast bias and accuracy metric queries.
                                 </p>
                                 <p class="leading-relaxed">
-                                    Increased LLM response accuracy by 16% by creating a specialized training dataset with complex PostgreSQL queries for retail forecasting.
+                                    Reduced AI infrastructure costs by 50% by transitioning to OpenAI's asynchronous Batch API, optimizing the embedding process for thousands of competitor product matches.
                                 </p>
                                 <p class="leading-relaxed">
-                                    Standardized development environments with Mamba YAML and documentation, reducing onboarding time and ensuring consistency.
+                                    Standardized development environments using Mamba YAML files and documentation, reducing onboarding time and ensuring consistent project setups.
                                 </p>
                             </div>
                             <!-- Tools used -->
@@ -374,7 +378,7 @@
 
                         <!-- Project 1 -->
                         <article class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover-lift-sm w-full">
-                            <img src="assets/images/project-1.jpeg" alt="Wiki Retriever project featuring Fandom wiki integration" class="w-full h-48 object-cover">
+                            <img src="assets/images/project-1.webp" alt="Wiki Retriever project featuring Fandom wiki integration" class="w-full h-48 object-cover">
                             <div class="p-6">
                                 <h3 class="text-xl font-semibold text-white">Wiki Retriever</h3>
                                 <p class="text-gray-400 mt-2">Get precise answers from multiple wiki sites through a Retrieval-Augmented Generation (RAG) pipeline, enabling seamless, domain-specific question answering.
@@ -385,7 +389,7 @@
 
                         <!-- Project 2 -->
                         <article class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover-lift-sm w-full">
-                            <img src="assets/images/project-2.jpeg" alt="Enhanced Spotify Wrapped application interface" class="w-full h-48 object-cover">
+                            <img src="assets/images/project-2.webp" alt="Enhanced Spotify Wrapped application interface" class="w-full h-48 object-cover">
                             <div class="p-6">
                                 <h3 class="text-xl font-semibold text-white">Enhanced Spotify Wrapped</h3>
                                 <p class="text-gray-400 mt-2">A better spotify wrapped experience, enhanced with personalized AI-driven functionality.
@@ -406,13 +410,13 @@
                         <!-- First Testimonial -->
                         <article class="bg-gray-800 rounded-lg shadow-lg p-6">
                             <p class="text-xl text-gray-300 italic">"Ben made a real impact during his time with us leveraging his computer science and AI background."</p>
-                            <p class="mt-5 text-blue-300 font-semibold">– Srihari Jaganathan, Director of Advanced Analytics at UCB</p>
+                            <p class="mt-5 text-blue-300 font-semibold">- Srihari Jaganathan, Director of Advanced Analytics at UCB</p>
                         </article>
 
                         <!-- Second Testimonial -->
                         <article class="bg-gray-800 rounded-lg shadow-lg p-6">
                             <p class="text-xl text-gray-300 italic">"Ben's dedication and innovative contributions have been invaluable to our team."</p>
-                            <p class="mt-5 text-blue-300 font-semibold">– Sam Iosevich, Chief Analytics Officer at The Parker Avery Group</p>
+                            <p class="mt-5 text-blue-300 font-semibold">- Sam Iosevich, Chief Analytics Officer at The Parker Avery Group</p>
                         </article>
                     </div>
                 </div>
@@ -434,8 +438,9 @@
         <p class="text-sm">© 2026 | Built by Ben Irastorza | All Rights Reserved.</p>
     </footer>
     
-    <!-- Link to index.js -->
-    <script src="index.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script defer src="index.js"></script>
 
 </body>
 </html>

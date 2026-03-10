@@ -127,7 +127,7 @@ function initializeTyped() {
     setTimeout(() => {
         new Typed('.typed-name', {
             strings: [nameText],
-            typeSpeed: 80,
+            typeSpeed: 50,
             showCursor: false,
             onComplete: () => {
                 // Start title typing after name is complete

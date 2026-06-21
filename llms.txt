@@ -1,0 +1,26 @@
+# Ben Irastorza
+
+> Personal portfolio of Ben Irastorza, a Software Engineer and 4th-year Computer Science student at Georgia Tech.
+
+## About
+
+- [About Me](https://ben-irastorza.dev/#about): Background, interests, and what I'm working on.
+- [Tech Skills](https://ben-irastorza.dev/#technologies): Languages, frameworks, and tools I use.
+- [Resume](https://ben-irastorza.dev/assets/data/Ben_Irastorza_Resume.pdf): Full resume (PDF).
+
+## Experience
+
+- [Capital One](https://www.capitalone.com/)
+- [Southern Company](https://www.southerncompany.com/)
+- [UCB Biopharma](https://www.ucb.com/)
+- [The Parker Avery Group](https://parkeravery.com)
+
+## Projects
+
+- [Wiki Project](https://github.com/birastor22/wiki-project)
+- [Spotify Wrapped App](https://github.com/nicksadri/spotify-wrapped-app)
+
+## Contact
+
+- [GitHub](https://github.com/birastor22)
+- [LinkedIn](https://www.linkedin.com/in/ben-irastorza/)

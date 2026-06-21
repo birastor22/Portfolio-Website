@@ -2,7 +2,7 @@
 
 Personal portfolio website built with HTML, Tailwind CSS, and JavaScript.
 
-**Live site:** https://www.ben-irastorza.dev
+**Live site:** https://ben-irastorza.dev
 
 ---
 
@@ -57,7 +57,7 @@ Open `index.html` directly in your browser, or use a local server:
 npx serve .
 ```
 
-Then visit `http://localhost:3000`.
+Then visit http://localhost:3000.
 
 ---
 
@@ -71,34 +71,29 @@ npx tailwindcss -i src/input.css -o src/output.css --watch
 
 Any time you add or remove Tailwind classes in `index.html` or `index.js`, the output CSS will rebuild instantly.
 
+**Before committing:** rebuild the CSS with minification so the deployed `output.css` stays small:
+
+```bash
+npx tailwindcss -i src/input.css -o src/output.css --minify
+```
+
 ---
 
 ## Project Structure
 
 ```
 Portfolio-Website/
-├── assets/
-│   ├── images/          # Profile pic, project screenshots, tech logos
-│   └── data/            # Resume PDF
-├── src/
-│   ├── input.css        # Tailwind entry point (@tailwind directives)
-│   └── output.css       # Compiled CSS (auto-generated, do not edit)
+├── _headers             # Cloudflare Pages caching & indexing rules
+├── llms.txt             # High-density summary optimized for AI search/LLMs
+├── robots.txt           # Crawler rules (allows all user agents)
 ├── index.html           # Main page
 ├── index.js             # particles.js config + Typed.js animation
 ├── tailwind.config.js   # Tailwind configuration
-└── package.json
+├── package.json
+├── assets/
+│   ├── images/          # Profile pic, project screenshots, tech logos
+│   └── data/            # Resume PDF
+└── src/
+    ├── input.css        # Tailwind entry point (@tailwind directives)
+    └── output.css       # Compiled CSS (auto-generated, do not edit)
 ```
-
----
-
-## Deployment
-
-The site is deployed via GitHub Pages using a `CNAME` file pointing to `www.ben-irastorza.dev`.
-
-Before deploying, make sure to run a fresh CSS build so `src/output.css` is up to date:
-
-```bash
-npx tailwindcss -i src/input.css -o src/output.css
-```
-
-Then push to the `main` branch — GitHub Pages serves `index.html` from the root automatically.

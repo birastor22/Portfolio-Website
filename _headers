@@ -1,0 +1,16 @@
+# Keep the resume PDF out of search engine indexes and always fetch fresh.
+/assets/data/Ben_Irastorza_Resume.pdf
+  X-Robots-Tag: noindex
+  Cache-Control: no-cache, no-store, must-revalidate
+
+# Images are cached locally — revalidate before using a cached copy.
+/assets/images/*
+  Cache-Control: no-cache, must-revalidate
+
+# Built CSS can change on deploy — revalidate before using a cached copy.
+/src/*
+  Cache-Control: no-cache, must-revalidate
+
+# First-party JS can change on deploy — revalidate before using a cached copy.
+/index.js
+  Cache-Control: no-cache, must-revalidate
